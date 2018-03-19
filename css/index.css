@@ -1,0 +1,14 @@
+body{
+    margin: 0px;
+    padding: 0px;
+  }
+  #bgImageContainer{
+    background-image:url('https://raw.githubusercontent.com/sebasvelasco353/login/master/images/StockSnap_UBB72XPOT8.jpg'); 
+    background-repeat:no-repeat;
+    background-position:center;
+    width:100vw;
+    height:100vh;
+    -webkit-filter: blur(14px);
+    z-index:0;
+    position:absolute;
+  }
