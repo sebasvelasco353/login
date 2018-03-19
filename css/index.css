@@ -1,14 +1,44 @@
 body{
-    margin: 0px;
-    padding: 0px;
-  }
-  #bgImageContainer{
-    background-image:url('https://raw.githubusercontent.com/sebasvelasco353/login/master/images/StockSnap_UBB72XPOT8.jpg'); 
-    background-repeat:no-repeat;
-    background-position:center;
-    width:100vw;
-    height:100vh;
-    -webkit-filter: blur(14px);
-    z-index:0;
-    position:absolute;
-  }
+  margin: 0px;
+  padding: 0px;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+#bgImageContainer{
+  background-image:url('https://raw.githubusercontent.com/sebasvelasco353/login/master/images/StockSnap_UBB72XPOT8.jpg'); 
+  background-repeat:no-repeat;
+  background-position:center;
+  width:100vw;
+  height:100vh;
+  -webkit-filter: blur(14px);
+  z-index:0;
+  position:absolute;
+}
+#container{
+  z-index: 1;
+  align-items: center;
+  padding-top: 10%;
+}
+.login{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 320px;
+    height: 100%;
+    background: linear-gradient(rgba(148, 113, 152, 0.8), rgba(97, 69, 100, 0.8));
+    position: relative;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  
+    /*  grid inside of the form  */
+    display: grid;
+    grid-template-row: repeat(4, 1fr);
+}
+p{
+  margin-bottom: 8vh;
+}
+input{
+  margin-bottom: 5vh;
+}
