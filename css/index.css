@@ -21,20 +21,21 @@ body{
   padding-top: 10%;
 }
 .login{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 320px;
-    height: 100%;
-    background: linear-gradient(rgba(148, 113, 152, 0.8), rgba(97, 69, 100, 0.8));
-    position: relative;
-    padding-bottom: 80px;
-    padding-top: 80px;
-  
-    /*  grid inside of the form  */
-    display: grid;
-    grid-template-row: repeat(4, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 320px;
+  height: 100%;
+  background: linear-gradient(rgba(148, 113, 152, 0.8), rgba(97, 69, 100, 0.8));
+  position: relative;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  text-align: center;
+
+  /*  grid inside of the form  */
+  display: grid;
+  grid-template-row: repeat(4, 1fr);
 }
 .email_row{
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -47,6 +48,18 @@ body{
 p{
   margin-top: 0;
   margin-bottom: 7vh;
+  font-size: 1.5em;
+}
+.frgt{
+  margin-top: 20px;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  text-decoration: none;
+}
+.frgt:hover{
+  text-decoration: underline;
 }
 input{
   width: 100%;
@@ -54,7 +67,46 @@ input{
   background: transparent;
   border: none;
   color: #FFFFFF;
+  
 }
 ::placeholder {
-    color: #FFFFFF;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+button{
+  background: transparent;
+  color: #FFFFFF;
+  height: 50px;
+  font-size: 0.8em;
+}
+button:hover{
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+}
+button:focus{
+}
+
+/* animation */
+.loader{
+  margin-bottom: 7vh;
+}
+.line {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+.loader .line:nth-last-child(1) {
+  animation: loading 2s 0s infinite;
+}
+
+@keyframes loading {
+  0%,100% {transform: translate(-120px,0);}
+  50% {transform: translate(120px,0);}
 }

@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="https//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="./js/index.js"></script>
     <title>Login</title>
 </head>
 <body>
- 
-<div id="bgImageContainer"></div>
-<div id="container">
-  <form action="" class="login">
-    <p class="login-message">Login to your account</p>
-    <div class="email_row"><input type="text" placeholder="EMAIL" class="email-input"></div>
-    <div class="pswd_row"><input type="password" placeholder="PASSWORD" class="password-input"></div>
-    <button>LOGIN</button>
-  </form>
-</div>
-
+  <div id="bgImageContainer"></div>
+  <div id="container">
+    <form action="" class="login">
+      <p class="login-message" id="login-msg">Login to your account</p>
+      <div class="email_row"><input type="text" placeholder="EMAIL" class="email-input"></div>
+      <div class="pswd_row"><input type="password" placeholder="PASSWORD" class="password-input"></div>
+      
+      <div class="loader">
+        <div class="line"></div>
+      </div>
+      
+      <button id="login_btn">LOGIN</button>
+      <a href="" class="frgt">Forgot your password?</a>
+    </form>
+  </div>
 </body>
 </html>
