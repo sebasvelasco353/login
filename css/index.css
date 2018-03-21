@@ -95,15 +95,13 @@ button:focus{
 .loader{
   margin-bottom: 7vh;
 }
-.line {
+.loader_ball {
     display: inline-block;
     width: 15px;
     height: 15px;
     border-radius: 15px;
     background-color: #FFFFFF;
-}
-.loader .line:nth-last-child(1) {
-  animation: loading 2s 0s infinite;
+    animation: loading 2s 0s infinite;
 }
 
 @keyframes loading {
