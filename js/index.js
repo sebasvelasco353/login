@@ -1,4 +1,5 @@
 // everything is done with jquery, maybe later i will use vanilla js
+// 
 $( document ).ready(function() {
   $(".loader").hide();
 });
